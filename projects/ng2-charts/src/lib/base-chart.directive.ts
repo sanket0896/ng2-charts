@@ -129,9 +129,9 @@ export class BaseChartDirective<TType extends ChartType = ChartType,
         onClick: (event?: ChartEvent, active?: {}[]) => {
           this.chartClick.emit({ event, active });
         }
-      },
-      this.themeOverrides,
+      },       
       this.options,
+      this.themeOverrides,
       {
         plugins: {
           legend: {
